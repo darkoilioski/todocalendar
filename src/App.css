@@ -1,0 +1,163 @@
+.App {
+  overflow: hidden;
+}
+
+nav {
+  background-color: #282c34;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li.selected a {
+  background-color: #61dafb;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #61dafb;
+  color: black;
+}
+
+.main-content {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.project-name {
+  width: 25%;
+  font-size: 30px;
+  color: white;
+  background-color: #8496CB;
+}
+
+.start-date, .end-date {
+  width: 25%;
+  font-size: 30px;
+  color: white;
+  background-color: #8496CB;
+}
+
+.notes {
+  width: 25%;
+  font-size: 30px;
+  color: white;
+  background-color: #8496CB;
+}
+
+.edit {
+  width: 25%;
+  font-size: 30px;
+  color: white;
+  background-color: #8496CB;
+}
+
+td {
+  width: 25%;
+  text-align: center;
+  background-color: lightgray;
+    /* background: linear-gradient(to bottom, #FFFFFF, #808080);   */
+
+}
+
+.button {
+  color: white;
+  background-color: #282c34;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #61dafb;
+  color: black;
+
+  cursor: pointer;
+}
+
+label {
+  width: 28.5%;
+  display: inline-block;
+  padding-top: 4.5px;
+  font-size: 20px;
+}
+
+.modal-title {
+  background: linear-gradient(to bottom, #87ceeb, #b0e0e6);
+  text-align: center;
+}
+
+.modal {
+  /* background: linear-gradient(to bottom, #87CEEB, #B0E0E6); */
+  background: linear-gradient(to bottom, #9ec9d9, #b0e0e6);
+}
+
+.button-cancel {
+  border: 1px solid lightslategray;
+  background-color: #a7d4df;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.button-cancel:hover {
+  background-color: #ff6b6b;
+  border-color: white;
+}
+
+.button-save {
+  border: 1px solid lightslategray;
+  background-color: #a7d4df;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.button-save:hover {
+  background-color: #7cfc00;
+  border-color: white;
+}
+
+td {
+  font-size: 20px;
+}
+
+.actions-column {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions-column svg {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.status-column svg {
+  font-size: 25px;
+}
